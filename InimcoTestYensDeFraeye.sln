@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeveloperTestConsole", "Dev
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeveloperTestWinforms", "DeveloperTestWinforms\DeveloperTestWinforms.csproj", "{CA5E5543-8E98-446E-85D0-463B2F0D3387}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeveloperTestAngular", "DeveloperTestAngular\DeveloperTestAngular.csproj", "{E3C80200-522A-4E54-BA70-2ABB35B3FE6E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeveloperTestAngular", "DeveloperTestAngular\DeveloperTestAngular.csproj", "{EC160364-E94C-4D01-AAA6-E495857A9D5E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{CA5E5543-8E98-446E-85D0-463B2F0D3387}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA5E5543-8E98-446E-85D0-463B2F0D3387}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA5E5543-8E98-446E-85D0-463B2F0D3387}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E3C80200-522A-4E54-BA70-2ABB35B3FE6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E3C80200-522A-4E54-BA70-2ABB35B3FE6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E3C80200-522A-4E54-BA70-2ABB35B3FE6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E3C80200-522A-4E54-BA70-2ABB35B3FE6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC160364-E94C-4D01-AAA6-E495857A9D5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC160364-E94C-4D01-AAA6-E495857A9D5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC160364-E94C-4D01-AAA6-E495857A9D5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC160364-E94C-4D01-AAA6-E495857A9D5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
