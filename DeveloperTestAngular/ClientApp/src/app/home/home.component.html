@@ -1,9 +1,52 @@
-<h1>Hello, world!</h1>
-<h2>Personal user info</h2>
-<button (click)="onClickMe()">Click me!</button>
-<p>Welcome to your new single-page application, built with:</p>
-<label for="fname">First name:</label>
-<input [(ngModel)]="firstName" />
+<h1>Inimco Developer Test</h1>
+<h2>Tell us something about yourself !</h2>
+
+<label>First name:</label>
+<input [(ngModel)]="firstName" name="firstName" required minlength="2" class="form-control" />
+<label>Last name:</label>
+<input [(ngModel)]="lastName" class="form-control"/>
+<label>What are you Social Skills?</label>
+<input [(ngModel)]="socialSkills" class="form-control"/>
+<label>What are you Social Accounts?</label>
+<input [(ngModel)]="socialAccounts" class="form-control"/>
+
+<div *ngIf="firstName.invalid && (firstName.dirty || firstName.touched)"
+     class="alert alert-danger">
+
+  <div *ngIf="firstName.errors.required">
+    firstName is required.
+  </div>
+  <div *ngIf="firstName.errors.minlength">
+    firstName must be at least 2 characters long.
+  </div>
+</div>
+
+<button (click)="onSubmit()" >Click me!</button>
+
+<h2>Generated Output:</h2>
+<div id="form">
+  <p>The number of VOWELS: {{ personInfo.vowels }}</p>
+  <p>The number of CONSTENANTS: {{ personInfo.constenants }}</p>
+  <p>Fullname: {{ personInfo.fullName }}</p>
+  <p>Reversed Fullname: {{ personInfo.reversedFullName }}</p>
+  <p>The Person input object:</p>
+  <p>{{ personInfo.originalPersonModel | json}}</p>
+</div>
+
+
+<!--<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Favorite food</mat-label>
+    <input matInput placeholder="Ex. Pizza" value="Sushi">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Leave a comment</mat-label>
+    <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+  </mat-form-field>
+</form>-->
+
+<!--https://angular.io/guide/forms-->
 
 
 

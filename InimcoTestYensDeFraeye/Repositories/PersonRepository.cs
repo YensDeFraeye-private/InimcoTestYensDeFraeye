@@ -83,13 +83,15 @@ namespace DeveloperTestAPI.Repositories
         private List<SocialAccount> socialAccountsStringToList(string socialAccountString)
         {
             List<SocialAccount> socialAccounts = new List<SocialAccount>();
-            string[] socialAccountsSplittedString = socialAccountString.Split(',');
-            foreach (string saString in socialAccountsSplittedString)
-            {
-                string[] saSplitted = saString.Split('-');
-                socialAccounts.Add(new SocialAccount { Type = saSplitted[0], Address = saSplitted[1] });
+            if (!String.IsNullOrEmpty(socialAccountString)) {                
+                string[] socialAccountsSplittedString = socialAccountString.Split(',');
+                foreach (string saString in socialAccountsSplittedString)
+                {
+                    string[] saSplitted = saString.Split('-');
+                    socialAccounts.Add(new SocialAccount { Type = saSplitted[0], Address = saSplitted[1] });
+                }
             }
-
+            
             return socialAccounts;
         }
         #endregion
